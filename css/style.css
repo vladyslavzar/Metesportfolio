@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+input, button, textarea {
+  cursor: pointer;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */
+}
+
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+/*--------------------*/
+.content {
+  margin: 0 auto;
+  max-width: 840px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 38px;
+  color: #444444;
+  margin-bottom: 8px;
+}
+
+.paragraph {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #999999;
+}
+
+.activelink {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #444444;
+  transition: 0.5s;
+  margin-top: 16px;
+}
+.activelink:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.passivelink {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #999999;
+  transition: 0.5s;
+  margin-top: 16px;
+}
+.passivelink:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+header {
+  padding-top: 67px;
+}
+
+.headercontent img {
+  height: 64px;
+  width: 64px;
+  margin-bottom: 16px;
+}
+
+.projectlist {
+  margin-top: 127px;
+}
+.projectlist .projectlistcontent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.projectlist .imagecontainer {
+  margin-bottom: 16px;
+}
+.projectlist p {
+  margin-bottom: 16px;
+}
+
+.itemlable {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 815px) {
+  .content {
+    padding: 0 24px 0 24px;
+  }
+
+  .projectlistcontent {
+    flex-direction: column;
+  }
+  .projectlistcontent article {
+    width: 100%;
+    margin-bottom: 80px !important;
+  }
+  .projectlistcontent article:last-child {
+    margin-bottom: 0px !important;
+  }
+  .projectlistcontent img {
+    width: 100%;
+  }
+}
+.conceptworks {
+  margin-top: 128px;
+}
+
+.conceptworkscontainerflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 815px) {
+  .conceptworkscontainer article {
+    display: block;
+    width: 100%;
+    margin-bottom: 24px !important;
+  }
+  .conceptworkscontainer article:last-child {
+    margin-bottom: 0 !important;
+  }
+  .conceptworkscontainer img {
+    width: 100%;
+  }
+
+  .cwcf {
+    height: 400px !important;
+  }
+}
+.itemparagraph {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+  color: #666666;
+}
+
+.date {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #999999;
+}
+
+.experienceItem {
+  width: 222px;
+  height: 94px;
+  margin-top: 48px;
+}
+
+@media screen and (max-width: 815px) {
+  .experienceItem {
+    margin-top: 0;
+  }
+}
+.form {
+  margin-top: 102px;
+}
+.formcontainer {
+  padding: 24px 24px 43px 24px;
+  background-color: #F9F9F9;
+  border-radius: 4px;
+}
+.formcontainer p {
+  margin-bottom: 24px;
+}
+.formcontainer .input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+.formcontainer .input a {
+  text-align: right;
+}
+.formcontainer .input label {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+  margin-bottom: 8px;
+}
+.formcontainer .input input {
+  background-color: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  border-radius: 4px;
+  height: 40px;
+  transition: 0.3s;
+  padding-left: 12px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #666666;
+}
+.formcontainer .input input::placeholder {
+  color: #E7E7E7;
+}
+.formcontainer .input input:focus {
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 815px) {
+  .form {
+    margin-top: -18px;
+  }
+}
+footer {
+  margin-top: 40px;
+}
+footer .footercontainer {
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footercontainer ul {
+  display: flex;
+  justify-content: space-around;
+  width: 377px;
+}
+footer .footercontainer ul li {
+  text-transform: lowercase;
+}
+
+.footerparagraph {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #999999;
+}
+
+@media screen and (max-width: 815px) {
+  .footercontainer {
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: content-box;
+    padding-bottom: 28px;
+  }
+}
+.btn {
+  margin-bottom: 24px;
+}
+.btn a {
+  display: flex;
+  align-items: center;
+}
+.btn a:hover span {
+  color: #444444;
+}
+.btn a span {
+  font-size: 32px;
+  color: #2C3E50;
+  margin-right: 14px;
+  transition: 0.3s;
+}
+.btn a h6 {
+  margin: 0;
+}
+.btn a img {
+  margin-left: 8px;
+}
+
+.gallery {
+  margin-top: 128px;
+}
+.gallerycontainer article {
+  margin-bottom: 48px;
+}
+.gallerycontainer article img {
+  width: 100%;
+}
+.gallerycontainer article:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 815px) {
+  .cwcf {
+    height: 400px !important;
+  }
+}
